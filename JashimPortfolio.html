@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md. Jashim Uddin | Public Relations Executive</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #007bff, #6a82fb);
+            color: #333;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background: linear-gradient(to right, #007bff, #6a82fb, #00ffab);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            animation: fadeIn 1.5s;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            font-family: 'Arial Black', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #0056b3;
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            animation: slideDown 1s ease;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+
+        nav a:hover {
+            color: #00ffab;
+        }
+
+        section {
+            padding: 50px 20px;
+            margin: 20px;
+            border-radius: 15px;
+            animation: fadeInUp 1.5s ease-out;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+            background: #fff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .intro {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .intro <img src="img/profile.jpg" alt="Md. Jashim Uddin's Profile Photo">
+        {
+            width: 300px;
+            border-radius: 10px;
+            margin-right: 20px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+            animation: bounceIn 1.5s ease;
+        }
+
+        .intro-text {
+            max-width: 800px;
+        }
+
+        h2 {
+            color: #007bff;
+            font-family: 'Arial Black', sans-serif;
+        }
+
+        h2:hover {
+            color: #00ffab;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .experience, .education, .skills, .volunteer, .contact {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .experience:hover, .education:hover, .skills:hover, .volunteer:hover, .contact:hover {
+            transform: scale(1.05);
+            background-color: #f0f8ff;
+        }
+
+        .skills ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .skill-bar {
+            background-color: #e0e0e0;
+            border-radius: 5px;
+            position: relative;
+            margin-bottom: 10px;
+            height: 20px;
+            width: 100%;
+        }
+
+        .skill-bar-fill {
+            height: 100%;
+            background-color: #007bff;
+            border-radius: 5px;
+            transition: width 0.4s ease-in-out;
+        }
+
+        .icon {
+            color: #007bff;
+            margin-right: 10px;
+        }
+
+        footer {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input, textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 100%;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 15px;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #00ffab;
+        }
+
+        /* Animation Styles */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes bounceIn {
+            from {
+                transform: scale(0.3);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Md. Jashim Uddin</h1>
+        <p>Public Relations Executive | Content Writer | MSS & BSS in Mass Communication & Journalism</p>
+    </header>
+
+    <nav>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#volunteer">Volunteering</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="experience" class="container">
+        <div class="experience">
+            <h2><span class="icon">💼</span> Experience</h2>
+            <ul>
+                <li><strong>Public Relations Executive</strong> - bdCalling IT Ltd (Dhaka, Bangladesh)</li>
+                <li><strong>Campus Correspondent</strong> - uttarbangla.com (Rangpur, Bangladesh)</li>
+                <li><strong>Public Relations Executive</strong> - Greener Grow (Rangpur, Bangladesh)</li>
+                <li><strong>Photographer</strong> - Protibimbbo (Dhaka, Bangladesh)</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="education" class="container">
+        <div class="education">
+            <h2><span class="icon">🎓</span> Education</h2>
+            <ul>
+                <li><strong>MSS in Mass Communication & Journalism</strong> - Begum Rokeya University (CGPA: 3.61)</li>
+                <li><strong>BSS in Mass Communication & Journalism</strong> - Begum Rokeya University (CGPA: 3.66)</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="skills" class="container">
+        <div class="skills">
+            <h2><span class="icon">💡</span> Skills & Certifications</h2>
+            <ul>
+                <li>First Steps Into Public Speaking (Udemy)</li>
+                <li>Introduction to Digital Journalism (Reuters)</li>
+                <li>Effective Business Communication (Eduonix)</li>
+                <li>Leadership (10 Minute School)</li>
+            </ul>
+
+            <h3>Technical Skills</h3>
+            <div class="skill-bar">
+                <div class="skill-bar-fill" style="width: 80%;"></div>
+            </div>
+            <p>Public Speaking - 80%</p>
+
+            <div class="skill-bar">
+                <div class="skill-bar-fill" style="width: 70%;"></div>
+            </div>
+            <p>Leadership - 70%</p>
+
+            <div class="skill-bar">
+                <div class="skill-bar-fill" style="width: 60%;"></div>
+            </div>
+            <p>Writing & Communication - 60%</p>
+        </div>
+    </section>
+
+    <section id="volunteer" class="container">
+        <div class="volunteer">
+            <h2><span class="icon">🤝</span> Volunteering</h2>
+            <p>Leader of the Environmental Protection Organization (EPO)</p>
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <div class="contact">
+            <h2><span class="icon">📧</span> Contact</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <input type="submit" value="Send Message">
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Md. Jashim Uddin | All rights reserved.</p>
+    </footer>
+</body>
+</html>
